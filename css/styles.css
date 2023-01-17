@@ -513,7 +513,7 @@ body::-webkit-scrollbar{
 
 .vacant-jobs__link, .company-link {
   text-decoration: none;
-  color: blue;
+  color: #0000FF;
 }
 
 
@@ -987,7 +987,7 @@ body::-webkit-scrollbar{
 
 .jobs__link {
   text-decoration: none;
-  color: blue;
+  color: #0000FF;
 }
 
 
