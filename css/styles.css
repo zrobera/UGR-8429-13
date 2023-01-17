@@ -986,6 +986,7 @@ body::-webkit-scrollbar{
 
 .jobs__link {
   text-decoration: none;
+  color: blue;
 }
 
 
@@ -1115,6 +1116,9 @@ body::-webkit-scrollbar{
 
 .footer__socials {
   font-size: 1rem
+}
+.footer__scoials-title {
+  color: white;
 }
 
 
