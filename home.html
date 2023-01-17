@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <nav class="nav">
+        <a href="/home.html"> <img class="company-logo" src="images\logo.png" alt="company logo"> </a>
+        <input type="checkbox" id="tab-nav" class="tab-nav">
+        <label for="tab-nav" class="checkbox-label">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+        </label>
+        <ul class="nav__list">
+          <li class="nav__items">
+            <a class="nav__links nav__links--active" href="/home.html">Home</a>
+          </li>
+          <li class="nav__items">
+            <a class="nav__links" href="/jobs.html">Jobs</a>
+          </li>
+          <li class="nav__items">
+            <a class="nav__links" href="/companies.html">Companies</a>
+          </li>
+          <li class="nav__items">
+            <a class="nav__links" href="/about-us.html">About us</a>
+          </li>
+          <li class="nav__items">
+            <a class="nav__links" href="/careeradvice.html">Career advice</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+  </header>
+  <main class="main">
+    <section class="search">
+      <div>
+        <form class="search-form" action="">
+          <label for="search-job">
+            <h1 class="search__header">Find work that you'll love</h1>
+          </label>
+          <input class="search__input" type="text" placeholder="   Search jobs.." name="search" id="search-job">
+          <button onclick="searchAlert()" class="search-btn" type="submit">search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="latest-jobs">
+      <h1 class="latest-jobs__header">Latest job opportunities</h1>
+      <div class="latest-jobs__samples">
+        <div class="latest-jobs__sample">
+          <img class="latest-jobs__company-logo" src="images\crossover-logo.jpg" alt="crossover-logo" height="50px" width="50px">
+          <article class="latest-jobs__content">
+            <h2 class="latest-jobs__title">C Developer, Trilogy</h2>
+            <h3 class="latest-jobs__subtitle">crossover</h3>
+            <p>Austin, TX</p>
+            <p>Remote</p>
+            <p>$100,000/year USD</p>
+            <p>Date posted - <time datetime="2022-12-24">Dec23/2022</time></p>
+          </article>
+          <a class="latest-jobs__link"
+            href="https://www.linkedin.com/jobs/view/c-developer-trilogy-remote-%24100-000-year-usd-at-crossover-3404859230/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic&originalSubdomain=et"><button class="apply-btn" type="button"
+              name="button">Apply now</button></a>
+        </div>
+  
+        <div class="latest-jobs__sample">
+          <img class="latest-jobs__company-logo" src="images\omnipresent-logo.png" alt="omnipresent" height="50px" width="50px">
+          <article class="latest-jobs__content">
+            <h2 class="latest-jobs__title">Director of International Employment Law</h2>
+            <h3 class="latest-jobs__subtitle">Omnipresent</h3>
+            <p>7 Bell Yard, London.</p>
+            <p>Remote</p>
+            <p>salary negotiable</p>
+            <p>Date posted - <time datetime="2022-12-23">Dec22/2022</time></p>
+          </article>
+          <a class="latest-jobs__link"
+            href="https://boards.greenhouse.io/omnipresent/jobs/4058629101?gh_src=966f8982teu&utm_source=jobgether&utm_medium=website&utm_campaign=search&utm_content=Head%20of%20International%20Legal%20Employment%20-%20Fully%20Remote%20-%20Work%20from%20Anywhere!"><button class="apply-btn"
+              type="button" name="button">Apply now</button></a>
+        </div>
+  
+        <div class="latest-jobs__sample">
+          <img class="latest-jobs__company-logo" src="images\turing-logo.jpg" alt="Turing company-logo" height="50px" width="50px">
+          <article class="latest-jobs__content">
+            <h2 class="latest-jobs__title">Remote WordPress Developer Jobs</h2>
+            <h3 class="latest-jobs__subtitle">Turing</h3>
+            <p>Palo Alto, California</p>
+            <p>Remote</p>
+            <p>salary negotiable</p>
+            <p>Date posted - <time datetime="2022-12-22">Dec18/2022</time></p>
+          </article>
+          <a class="latest-jobs__link" class="latest-jobs__link" href="https://www.turing.com/jobs/remote-wordpress-developer?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"><button class="apply-btn" type="button" name="button">Apply
+              now</button></a>
+        </div>
+      </div>
+
+    </section>
+    <section class="features">
+      <div class="features__content">
+        <img class="features__img features__img1" src="images\employment.jpg" alt="two people shaking hands as a sign of agreement to work together" >
+        <article class="features__article1">
+          <h3 class="features__title">Avoid the tiresome process of looking for jobs </h3>
+          <p class="features__desc">You no longer have to go from companies to companies looking for jobs.  Whether it's a part time
+            job you seek or a fulltime, we have got you
+            covered. You'll also be able to explore companies that are currently hiring.</p>
+        </article>
+      </div>
+
+      <div class="features__content2">
+        <img class="features__img" src="images\success.jpg" alt="a successful man in Black Suit Sitting on Chair Beside Buildings">
+        <article class="features__article2">
+          <h3 class="features__title">Get career advice from experts</h3>
+          <p class="features__desc">We have compiled some of the best interviews with different entrepreneurs and successful people to help you with job career. You'll get many information ranging from interview tips to preparing good resumes, from
+            tips for job hunting to
+            evaluating job offers.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <h1 class="testimonial__header">What Our Users Are Saying</h1>
+      <div class="testimonial__content">
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <div class="testimonial__samples">
+            <div class="testimonial__slide first-slide">
+              <img class="testimonial__profile" src="images\profile1.jpg" alt="Afomia picture"/>
+              <i class="fa-sharp fa-solid fa-quote-left quote-icon"></i>
+              <article class="testimonial__desc">
+                <p>
+                  Dream Jobs has signficantly increased the employment rate of adults in Ethiopia. It is a great platform to find remote Jobs.
+                </p>
+  
+                <div class="testimonial__details profile-details">
+                  <span class="profile-details__name">Beza Letta</span>
+                  <span class="profile-details__location">Afar, Ethiopia</span>
+                </div>
+              </article>
+            </div>
+            <div class="testimonial__slide">
+              <img class="testimonial__profile" src="images\profile2.jpg" alt="Robel picture"/>
+              <i class="fa-sharp fa-solid fa-quote-left quote-icon"></i>
+              <article class="testimonial__desc">
+                <p>
+                  Dream Jobs is the best job resource out there! It is so user-friendly and has high-quality job listings.
+                </p>
+  
+                <div class="testimonial__details profile-details">
+                  <span class="profile-details__name">Robel Abebe</span>
+                  <span class="profile-details__location">Arbaminch, Ethiopia</span>
+                </div>
+              </article>
+            </div>
+            <div class="testimonial__slide">
+              <img class="testimonial__profile" src="images\profile3.jpg" alt="Rahwa profile picture"/>
+              <i class="fa-sharp fa-solid fa-quote-left quote-icon"></i>
+              <article class="testimonial__desc">
+                <p>
+                  Dream Jobs is the best! You make a difference in the quality of a person's life. Thank you, keep up the amazing work!
+                </p>
+  
+                <div class="testimonial__details profile-details">
+                  <span class="profile-details__name">Rahwa Addis</span>
+                  <span class="profile-details__location">Addis Ababa, Ethiopia</span>
+                </div>
+              </article>
+            </div>
+            <div class="testimonial__slide">
+              <img class="testimonial__profile" class="testimonial__profile" src="images\profile4.jpg" alt="hewan profile picture" />
+              <i class="fa-sharp fa-solid fa-quote-left quote-icon"></i>
+              <article class="testimonial__desc">
+                <p>
+                  I loves using Dream Jobs. I stayed jobless for almost a year, but thanks to Dream Jobs I currently work remotely.
+                </p>
+  
+                <div class="testimonial__details profile-details">
+                  <span class="profile-details__name">Hewan Melaku</span>
+                  <span class="profile-details__location">Addis Ababa, Ethiopia</span>
+                </div>
+              </article>
+            </div>
+            <div class="testimonial__slide">
+              <img class="testimonial__profile" src="images\profile5.jpeg" alt="Fraol profile picture" />
+              <i class="fa-sharp fa-solid fa-quote-left quote-icon"></i>
+              <article class="testimonial__desc">
+                <p>
+                  KEEP UP THE GOOD WORK!!! In two weeks, I found a job... I could not believe it, but it happened. The pay, job, benefits, and working at home are all awesome!
+                </p>
+  
+                <div class="testimonial__details profile-details">
+                  <span class="profile-details__name">Fraol Beyene</span>
+                  <span class="profile-details__location">Diredawa, Ethiopia</span>
+                </div>
+              </article>
+            </div>
+            <div class="testimonial__slide">
+              <img class="testimonial__profile" src="images\profile6.jpg" alt="Mihret profile picture"/>
+              <i class="fa-sharp fa-solid fa-quote-left quote-icon"></i>
+              <article class="testimonial__desc">
+                <p>
+                  I am so grateful to Dream Jobs. It's truly a company that helps people change their careers and their lives."
+                </p>
+  
+                <div class="testimonial__details profile-details">
+                  <span class="profile-details__name">Mihret Shimels</span>
+                  <span class="profile-details__location">Hawassa, Ethiopia</span>
+                </div>
+              </article>
+            </div>
+        </div>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+      </div>
+      
+      
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__main">
+      <a href="/home.html"> <img class="company-logo footer__logo" src="images\logo.png" alt="company logo"> </a>
+      <ul class="footer__list" id="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="/Careeradvice.html">Career advice</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/about-us.html">About Us</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/Contact Us.html">Contact Us</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/jobs.html">Jobs</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/Companies.html">Companies</a>
+        </li>
+      </ul>
+      <div class="footer__socials">
+        <h2 class="footer__scoials-title">Follow us on</h2>
+        <div class="footer__icons">
+          <a class="footer__icon-links" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="footer__icon-links" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a class="footer__icon-links" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+          <a class="footer__icon-links" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>copyright 2022 <i class="fa-regular fa-copyright"></i> Dream Jobs All rights reserved</p>
+    </div>
+    
+
+  </footer>
+  <script src="js\script.js"></script> 
+
+</body>
+
+</html>
