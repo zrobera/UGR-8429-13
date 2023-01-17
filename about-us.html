@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <nav class="nav">
+        <a href="/home.html"> <img class="company-logo" src="images\logo.png" alt="company logo"> </a>
+        <input type="checkbox" id="tab-nav" class="tab-nav">
+        <label for="tab-nav" class="checkbox-label">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+        </label>
+        <ul class="nav__list">
+          <li class="nav__items">
+            <a class="nav__links" href="/home.html">Home</a>
+          </li>
+          <li class="nav__items">
+            <a class="nav__links" href="/jobs.html">Jobs</a>
+          </li>
+          <li class="nav__items">
+            <a class="nav__links" href="/companies.html">Companies</a>
+          </li>
+          <li class="nav__items">
+            <a class="nav__links nav__links--active" href="/about-us.html">About us</a>
+          </li>
+          <li class="nav__items">
+            <a class="nav__links" href="/careeradvice.html">Career advice</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+  </header>
+  <main class="about-us-main">
+    <section class="container">
+      <section class="about-us">
+        <article class="about-us__article">
+          <h1 class="about-us__heading">Who we are</h1>
+          <p class="about-us__desc">Job hunt is a job search website which connects job seekers with employers.
+            We gather many job opportunities of different categories from all over the world and put them in one place so that they are easily accessible.
+            Job hunt is a place to search for jobs, research companies and get career advice.
+              We strive to increase the working community all over the world.
+          </p>
+        </article>
+      </section>
+      <section class="founder-profile">
+        <h2 class="founder-profile__heading">Founder</h2>
+        <img class="founder-img" src="images\founder-profile.jpg" alt="founder">
+        <article class="about-founder">
+          <p class="about-founder__desc">Robel Tesfaye is a Software Engineer who graduated from AAiT with BS in Software Engineering.
+              He founded job hunt inspired to solve the problem of luck of resources to search for jobs.
+              He seeks to minimize unemployment issues through using his skills.
+          </p>
+        </article>
+      </section>
+      <section class="our-team">
+        <h2 class="our-team__header">Our team</h2>
+          <!-- A link to a transcript within the same document -->
+          <a class="transcript-link" rel="transcript" for="ourteam-vid" title="English transcript" href="#transcript">Transcript below</a>
+        </p>
+        <video class="ourteam-vid" id="ourteam-vid" controls="controls">
+          <source src="video\Meet the Team.mp4" type="video/mp4">
+        </video>
+        <div role="transcript" class="transcript" id="transcript">
+          <p class="transcipt__desc">
+          Meet the Dream Job team text appear. In the back,a man and a woman are standing wearing work cloth. 
+          The man is pointing at a construction work as if he is explaining something to the woman.
+          A man named Binyam appears, he edits and organizes the companies contents
+          A girl named eskedar appears, she is on copy and makes the companies words shine
+          A girl named Netsanet appears and she is the social media master mind.
+          </p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__main">
+      <a href="/home.html"> <img class="company-logo footer__logo" src="images\logo.png" alt="company logo"> </a>
+      <ul class="footer__list" id="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="/home.html">Home</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/Careeradvice.html">Career advice</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/about-us.html">About Us</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/Contact Us.html">Contact Us</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/jobs.html">Jobs</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/Companies.html">Companies</a>
+        </li>
+      </ul>
+      <div class="footer__socials">
+        <h2 class="footer__scoials-title">Follow us on</h2>
+        <div class="footer__icons">
+          <a class="footer__icon-links" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="footer__icon-links" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a class="footer__icon-links" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+          <a class="footer__icon-links" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>copyright 2022 <i class="fa-regular fa-copyright"></i> Dream Jobs All rights reserved</p>
+    </div>
+  </footer>
+  <script src="js\script.js"></script> 
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <nav class="nav">
+        <a href="/home.html"> <img class="company-logo" src="images\logo.png" alt="company logo"> </a>
+        <input type="checkbox" id="tab-nav" class="tab-nav">
+        <label for="tab-nav" class="checkbox-label">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+        </label>
+        <ul class="nav__list">
+          <li class="nav__items">
+            <a class="nav__links" href="/home.html">Home</a>
+          </li>
+          <li class="nav__items">
+            <a class="nav__links" href="/jobs.html">Jobs</a>
+          </li>
+          <li class="nav__items">
+            <a class="nav__links" href="/companies.html">Companies</a>
+          </li>
+          <li class="nav__items">
+            <a class="nav__links" href="/about-us.html">About us</a>
+          </li>
+          <li class="nav__items">
+            <a class="nav__links" href="/careeradvice.html">Career advice</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <main class="contact-main">
+    <div class="contact-main__container">
+      <div class="contact-main__content">
+        <section class="contact-info">
+          <div class="phone contact-info__detail">
+            <i class="fa-solid fa-phone contact-icons"></i>
+            <div class="contact-info__topic">Phone</div>
+            <div class="contact-info__content"><a class="contact-link" href="tel:+251941819399">+251941819399</a></div>
+          </div>
+          <div class="email contact-info__detail">
+            <i class="fa-solid fa-envelope contact-icons"></i>
+            <div class="contact-info__topic">Email</div>
+            <div class="contact-info__content"><a class="contact-link" href="mailto: robeltesfaye428@gmail.com">robeltesfaye428@gmail.com</a></div>
+          </div>
+          <div class="address contact-info__detail">
+            <i class="fa-solid fa-location-dot contact-icons"></i>
+            <div class="contact-info__topic">Address</div>
+            <a class="contact-link" href="https://goo.gl/maps/XBrqPZsgrUKJpEPZ8">
+              <div class="adress-container">
+                <div class="contact-info__content">Ethiopia</div>
+                <div class="contact-info__content">Djibouti st, Addis Ababa</div>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="contact-form">
+          <div class="contact-form__topic">Send us a message</div>
+          <p>If you have any comment regarding our service, or if you have any query related to Dream Jobs, feel free to contact us. It is our pleasure to help you.</p>
+          <form id="form">
+            
+            <div class="input-box">
+              <label class="contact-label" for="fullname">Fullname</label>
+              <input class="form-input" type="text" name="name" placeholder="Full name" id="fullname">
+              <small class="error-message">Error message</small>
+            </div>
+            
+            <div class="input-box">
+              <label class="contact-label" for="email">Email</label>
+              <input class="form-input" name="email" placeholder="Enter email" id="email">
+              <small class="error-message">Error message</small>
+            </div>
+            
+            <div class="input-box">
+              <label class="contact-label" for="subject">Subject</label>
+              <input class="form-input" type="text" name="subject" placeholder="Subject" id="subject">
+              <small class="error-message">Error message</small>
+            </div>
+            
+            <div class="input-box message-box">
+              <label class="contact-label" for="message">Message</label>
+              <textarea class="text-area" name="message" rows="6" cols="40" placeholder="message" id="message"></textarea>
+              <small class="error-message">Error message</small>
+            </div>
+            <button class="submit-btn" type="submit" onclick="alertFunction()">Submit</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__main">
+      <a href="/home.html"> <img class="company-logo footer__logo" src="images\logo.png" alt="company logo"> </a>
+      <ul class="footer__list" id="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="/home.html">Home</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/Careeradvice.html">Career advice</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/about-us.html">About Us</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/Contact Us.html">Contact Us</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/jobs.html">Jobs</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/Companies.html">Companies</a>
+        </li>
+      </ul>
+      <div class="footer__socials">
+        <h2 class="footer__scoials-title">Follow us on</h2>
+        <div class="footer__icons">
+          <a class="footer__icon-links" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="footer__icon-links" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a class="footer__icon-links" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+          <a class="footer__icon-links" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>copyright 2022 <i class="fa-regular fa-copyright"></i> Dream Jobs All rights reserved</p>
+    </div>
+  </footer> 
+
+  <script src="js\script.js"></script>
+</body>
+
+</html>
