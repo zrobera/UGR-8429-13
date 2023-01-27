@@ -6,193 +6,205 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jobs</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap\bootstrap.css">
+  <link rel="stylesheet" href="bootstrap\styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
-<body>
+<body class="overflow-x-hidden">
   <header class="header">
-    <div class="nav-container">
-      <nav class="nav">
-        <a href="index.html"> <img class="company-logo" src="images\logo.png" alt="company logo"> </a>
-        <input type="checkbox" id="tab-nav" class="tab-nav">
-        <label for="tab-nav" class="checkbox-label">
-          <div class="burger"></div>
-          <div class="burger"></div>
-          <div class="burger"></div>
-        </label>
-        <ul class="nav__list">
-          <li class="nav__items">
-            <a class="nav__links" href="index.html">Home</a>
-          </li>
-          <li class="nav__items">
-            <a class="nav__links  nav__links--active" href="jobs.html">Jobs</a>
-          </li>
-          <li class="nav__items">
-            <a class="nav__links" href="companies.html">Companies</a>
-          </li>
-          <li class="nav__items">
-            <a class="nav__links" href="aboutUs.html">About us</a>
-          </li>
-          <li class="nav__items">
-            <a class="nav__links" href="careeradvice.html">Career advice</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-dark-brown">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-lg-9 ms-md-6 ms-sm-1 me-xl-10 me-lg-5 me-md-1" href="index.html"><img class="company-logo img-fluid" src="images\logo.png" alt="company logo" width="150vw"> </a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav fs-3 ">
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-3 bg-black">
+              <a class="nav-link active text-white" href="jobs.html" aria-current="page">Jobs</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="companies.html">Companies</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="careeradvice.html">Career advice</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
     
   </header>
-
-  <main class="jobs-main">
-    <section class="search job-search">
-      <div>
-        <form class="search-form" action="">
+  <main class="main">
+    <section class="d-flex justify-content-center align-items-center job-search">
+        <form class="search-form d-flex flex-column text-center">
           <label for="search-job">
-            <h1 class="search__header">Find work that you'll love</h1>
+            <h1 class="fw-bolder display-3 text-danger mb-4 shadow">Find work that you'll love</h1>
           </label>
-          <input class="search__input" type="text" placeholder="   Search jobs.." name="search" id="search-job">
-          <button onclick="searchAlert()" class="search-btn" type="submit">search</button>
+          <input class="mb-4 p-2 rounded-pill w-75 mx-auto" type="text" placeholder="   Search jobs.." name="search" id="search-job">
+          <button onclick="searchAlert()" class="btn btn-light mx-auto px-4 " type="submit">search</button>
         </form>
       </div>
     </section>
-    <section class="jobs">
-      <h1 class="jobs__header">Recent job opportunities</h1>
-      <div class="tables__container">
-        <table class="jobs__table">
-          <tr class="table-row">
-            <th class="table-header">Work from home</th>
+
+    <section class="py-6">
+      <div class="text-center my-6">
+        <h1 class="ms-auto">Recent job opportunities</h1>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center lh-lg">
+        <table class="mb-6 mb-lg-0">
+          <tr>
+            <th class="bg-dark-brown text-white p-2">Work from home</th>
           </tr>
-          <tr class="table-row">
-            <td class="table-data"><a class="jobs__link" href="https://www.capitalonecareers.com/job/-/-/234/41647333792?p_sid=px2zONb&ss=paid&utm_campaign=enterprise_tech_2022&utm_medium=jobad&utm_content=pj_board&p_uid=cAKBEMTXiv&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRacR8I4a15d-QZLJK3y4lsQlwp07GezTsKPinuCR-5_D_BwE">Senior Associate, Full Stack</a></td>
+          <tr>
+            <td class="bg-light p-2"><a class="text-decoration-none text-blue" href="https://www.capitalonecareers.com/job/-/-/234/41647333792?p_sid=px2zONb&ss=paid&utm_campaign=enterprise_tech_2022&utm_medium=jobad&utm_content=pj_board&p_uid=cAKBEMTXiv&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRacR8I4a15d-QZLJK3y4lsQlwp07GezTsKPinuCR-5_D_BwE">Senior Associate, Full Stack</a></td>
           </tr>
-          <tr class="table-row">
-            <td class="table-data"><a class="jobs__link" href="https://jobs.kindredhealthcare.com/job/-/-/653/41437637584?ss=paid&utm_content=pj_board&utm_source=cmp%20v2.0&utm_medium=jobad&utm_campaign=kr_hrs&p_uid=V0mJUUkW8I&p_sid=WZeNb0b&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRRWID2rR8AhDsOzMFknmGO6CReYrYEEMU9KCTfOr3hfD_BwE">Patient Assessment Coordinator- Per Diem</a></td>
+          <tr>
+            <td class="bg-primary-brown p-2"><a class="text-decoration-none text-blue" href="https://jobs.kindredhealthcare.com/job/-/-/653/41437637584?ss=paid&utm_content=pj_board&utm_source=cmp%20v2.0&utm_medium=jobad&utm_campaign=kr_hrs&p_uid=V0mJUUkW8I&p_sid=WZeNb0b&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRRWID2rR8AhDsOzMFknmGO6CReYrYEEMU9KCTfOr3hfD_BwE">Patient Assessment Coordinator- Per Diem</a></td>
           </tr>
-          <tr class="table-row">
-            <td class="table-data"><a class="jobs__link" href="https://www.takedajobs.com/job/-/-/1113/40049089088?utm_medium=jobad&p_uid=Cz6oVN8OwM&source=tmp_takeda_programmatic&utm_campaign=rd_us_coei&utm_content=pj_board&p_sid=zHiWnwb&ss=paid&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRkT2a0BiZvKYJqoDhZgQPfgFb84NMyj96a11PcmaedfD_BwE">Associate Director, Global Regulatory Affairs</a></td>
+          <tr>
+            <td class="bg-light p-2"><a class="text-decoration-none text-blue" href="https://www.takedajobs.com/job/-/-/1113/40049089088?utm_medium=jobad&p_uid=Cz6oVN8OwM&source=tmp_takeda_programmatic&utm_campaign=rd_us_coei&utm_content=pj_board&p_sid=zHiWnwb&ss=paid&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRkT2a0BiZvKYJqoDhZgQPfgFb84NMyj96a11PcmaedfD_BwE">Associate Director, Global Regulatory Affairs</a></td>
 
           </tr>
-          <tr class="table-row">
-            <td class="table-data"><a  class="jobs__link" href="https://www.kaiserpermanentejobs.org/job/-/-/641/41905943392?utm_source=cmp%20v2.0&utm_campaign=kp%20nursing%20oregon&utm_medium=jobad&utm_content=pj_board&p_uid=fSPeImJxmU&ss=paid&p_sid=kJos2Ob&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRo54V7bKaPyWWBrh4LuEvVaEXkicfkVsMPBCn8L5Zf_D_BwE">Community Medical Integration Coordinator</a></td>
+          <tr>
+            <td class="bg-primary-brown p-2"><a  class="text-decoration-none text-blue" href="https://www.kaiserpermanentejobs.org/job/-/-/641/41905943392?utm_source=cmp%20v2.0&utm_campaign=kp%20nursing%20oregon&utm_medium=jobad&utm_content=pj_board&p_uid=fSPeImJxmU&ss=paid&p_sid=kJos2Ob&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRo54V7bKaPyWWBrh4LuEvVaEXkicfkVsMPBCn8L5Zf_D_BwE">Community Medical Integration Coordinator</a></td>
 
           </tr>
-          <tr class="table-row">
-            <td class="table-data"><a  class="jobs__link" href="https://jobs.kindredhealthcare.com/job/-/-/653/41437637584?ss=paid&utm_content=pj_board&utm_source=cmp%20v2.0&utm_medium=jobad&utm_campaign=kr_hrs&p_uid=V0mJUUkW8I&p_sid=WZeNb0b&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRRWID2rR8AhDsOzMFknmGO6CReYrYEEMU9KCTfOr3hfD_BwE">Patient Assessment Coordinator- Per Diem</a></td>
+          <tr>
+            <td class="bg-light p-2"><a  class="text-decoration-none text-blue" href="https://jobs.kindredhealthcare.com/job/-/-/653/41437637584?ss=paid&utm_content=pj_board&utm_source=cmp%20v2.0&utm_medium=jobad&utm_campaign=kr_hrs&p_uid=V0mJUUkW8I&p_sid=WZeNb0b&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRRWID2rR8AhDsOzMFknmGO6CReYrYEEMU9KCTfOr3hfD_BwE">Patient Assessment Coordinator- Per Diem</a></td>
 
           </tr>
-          <tr class="table-row">
-            <td class="table-data"><a  class="jobs__link" href="https://careers.umich.edu/job_detail/227922/director-marketing-and-communications">Director of Marketing and Communications</a></td>
+          <tr>
+            <td class="bg-primary-brown p-2"><a  class="text-decoration-none text-blue" href="https://careers.umich.edu/job_detail/227922/director-marketing-and-communications">Director of Marketing and Communications</a></td>
 
           </tr>
         </table>
-        <table class="jobs__table">
-          <tr class="table-row">
-            <th class="table-header d2">Full-time</th>
+        <table class="mb-6 mb-lg-0">
+          <tr>
+            <th class="bg-dark-brown text-white p-2">Full-time</th>
           </tr>
-          <tr class="table-row">
-            <td class="table-data d2"><a class="jobs__link" href="https://cmc.taleo.net/careersection/ex_cmc/jobdetail.ftl?job=2201789&lang=en">Culinary Associate - Dietary</a></td>
+          <tr>
+            <td class="bg-light p-2"><a class="text-decoration-none text-blue" href="https://cmc.taleo.net/careersection/ex_cmc/jobdetail.ftl?job=2201789&lang=en">Culinary Associate - Dietary</a></td>
 
           </tr>
-          <tr class="table-row">
-            <td class="table-data d2"><a class="jobs__link" href="https://cmc.taleo.net/careersection/ex_cmc/jobdetail.ftl?job=2201900&lang=en">Nutrition Ambassador - Nutrition Services</a></td>
+          <tr>
+            <td class="bg-primary-brown p-2"><a class="text-decoration-none text-blue" href="https://cmc.taleo.net/careersection/ex_cmc/jobdetail.ftl?job=2201900&lang=en">Nutrition Ambassador - Nutrition Services</a></td>
 
           </tr>
 
-          <tr class="table-row">
-            <td class="table-data d2"><a class="jobs__link" href="https://aligned-modern-health.breezy.hr/p/b1c8024b7b96-rehabilitation-aide-full-time-and-benefits">Rehabilitation Aide</a></td>
+          <tr>
+            <td class="bg-light p-2"><a class="text-decoration-none text-blue" href="https://aligned-modern-health.breezy.hr/p/b1c8024b7b96-rehabilitation-aide-full-time-and-benefits">Rehabilitation Aide</a></td>
           </tr>
-          <tr class="table-row">
-            <td class="table-data d2"><a  class="jobs__link" href="https://parksjobs.disneycareers.com/job/-/-/1678/41857246480?utm_medium=jobad&utm_campaign=dlr_fy22&utm_content=pj_board&p_uid=C6euPhSrG0&CID=19714&p_sid=QNc_p6b&ss=paid&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRZCUUR8gFGA796qUbZ7-CjqpIVVztPhBqL2GLF4vWFvD_BwE">Park Third Shift Custodial </a></td>
+          <tr>
+            <td class="bg-primary-brown p-2"><a  class="text-decoration-none text-blue" href="https://parksjobs.disneycareers.com/job/-/-/1678/41857246480?utm_medium=jobad&utm_campaign=dlr_fy22&utm_content=pj_board&p_uid=C6euPhSrG0&CID=19714&p_sid=QNc_p6b&ss=paid&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRZCUUR8gFGA796qUbZ7-CjqpIVVztPhBqL2GLF4vWFvD_BwE">Park Third Shift Custodial </a></td>
 
           </tr>
-          <tr class="table-row">
-            <td class="table-data d2"><a  class="jobs__link" href="https://legacy-mhc-management-llc.oasisrecruit.com/job/462749/full-time-maintenance">Full Time Maintenance</a></td>
+          <tr>
+            <td class="bg-light p-2"><a  class="text-decoration-none text-blue" href="https://legacy-mhc-management-llc.oasisrecruit.com/job/462749/full-time-maintenance">Full Time Maintenance</a></td>
 
           </tr>
-          <tr class="table-row">
-            <td class="table-data d2"><a  class="jobs__link" href="https://www.capitalonecareers.com/job/-/-/234/41486936752?utm_content=pj_board&utm_campaign=branchambassador&utm_medium=jobad&ss=paid&p_sid=SHvLavb&p_uid=3iHvx71CSp&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRYV9qbErFxuswSfRLPeZcSXNZ6rWGk7XDT_tFq7r-dPD_BwE">Full Time Branch Ambassador</a></td>
+          <tr>
+            <td class="bg-primary-brown p-2"><a  class="text-decoration-none text-blue" href="https://www.capitalonecareers.com/job/-/-/234/41486936752?utm_content=pj_board&utm_campaign=branchambassador&utm_medium=jobad&ss=paid&p_sid=SHvLavb&p_uid=3iHvx71CSp&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRYV9qbErFxuswSfRLPeZcSXNZ6rWGk7XDT_tFq7r-dPD_BwE">Full Time Branch Ambassador</a></td>
 
           </tr>
 
         </table>
-        <table class="jobs__table">
-          <tr class="table-row">
-            <th class="table-header" >Part-time</th>
+        <table>
+          <tr>
+            <th class="bg-dark-brown text-white p-2" >Part-time</th>
 
           </tr>
-        <tr class="table-row">
-          <td class="table-data"><a class="jobs__link" href="https://jobs.aus.com/job/-/-/22950/41550115616?utm_content=pj_board&p_sid=TtD1Plb&utm_campaign=standard_high&ss=paid&p_uid=MHPIzjsCVJ&iisn=Exchange&iis=TMPPJ&mode=job&utm_medium=jobad&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRP9M4px13vrBy26E1qLOuRuiVONE0C2ekRxqF4M8NXPD_BwE">SECURITY OFFICER - HOUSING COMMUNITY</a></td>
+        <tr>
+          <td class="bg-light p-2"><a class="text-decoration-none text-blue" href="https://jobs.aus.com/job/-/-/22950/41550115616?utm_content=pj_board&p_sid=TtD1Plb&utm_campaign=standard_high&ss=paid&p_uid=MHPIzjsCVJ&iisn=Exchange&iis=TMPPJ&mode=job&utm_medium=jobad&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRP9M4px13vrBy26E1qLOuRuiVONE0C2ekRxqF4M8NXPD_BwE">SECURITY OFFICER - HOUSING COMMUNITY</a></td>
 
         </tr>
-        <tr class="table-row">
-          <td class="table-data"><a class="jobs__link" href="https://charterseniorliving.jobaline.com/ApplyForJob?jobId=431396&s=267&l=32607&tid=-1&feed=true&pd=20221226204218&pc=0.00&p=true&utm_source=102&utm_medium=clickcast&ccuid=43382162785-4555">Licensed Nurse</a></td>
+        <tr>
+          <td class="bg-primary-brown p-2"><a class="text-decoration-none text-blue" href="https://charterseniorliving.jobaline.com/ApplyForJob?jobId=431396&s=267&l=32607&tid=-1&feed=true&pd=20221226204218&pc=0.00&p=true&utm_source=102&utm_medium=clickcast&ccuid=43382162785-4555">Licensed Nurse</a></td>
 
         </tr>
-        <tr class="table-row">
-          <td class="table-data"><a class="jobs__link" href="https://www.uber.com/us/en/s/c/deliver-kochab/?ad_id=442D6332383530396363663536393063643537373736313065656437636137313031&adgroup_id=CM2158563_Monster&campaign_id=CM2158563&creative_name=ptd&jClickId=64bSTh5EnnEX1yLFkNnPEmRxVjZp8nT9M65GZJMWQFxx&utm_campaign=CM2158563-US-CharlotteNC_c&utm_content=US-CharlotteNC_Monster&utm_medium=jobboards&utm_source=Exchange&utm_term=64bSTh5EnnEX1yLFkNnPEmRxVjZp8nT9M65GZJMWQFxx">Part-Time Delivery</a></td>
+        <tr>
+          <td class="bg-light p-2"><a class="text-decoration-none text-blue" href="https://www.uber.com/us/en/s/c/deliver-kochab/?ad_id=442D6332383530396363663536393063643537373736313065656437636137313031&adgroup_id=CM2158563_Monster&campaign_id=CM2158563&creative_name=ptd&jClickId=64bSTh5EnnEX1yLFkNnPEmRxVjZp8nT9M65GZJMWQFxx&utm_campaign=CM2158563-US-CharlotteNC_c&utm_content=US-CharlotteNC_Monster&utm_medium=jobboards&utm_source=Exchange&utm_term=64bSTh5EnnEX1yLFkNnPEmRxVjZp8nT9M65GZJMWQFxx">Part-Time Delivery</a></td>
 
         </tr>
-        <tr class="table-row">
-          <td class="table-data"><a  class="jobs__link" href="https://recruiting.ultipro.com/INL1001ICRC/JobBoard/d78211be-6fab-15b6-2d40-d723d8215afa/OpportunityDetail?opportunityId=96ba225f-53c5-43a8-b9e0-040a4c4ac62b">Parent Ambassador for Tagalog Language</a></td>
+        <tr>
+          <td class="bg-primary-brown p-2"><a  class="text-decoration-none text-blue" href="https://recruiting.ultipro.com/INL1001ICRC/JobBoard/d78211be-6fab-15b6-2d40-d723d8215afa/OpportunityDetail?opportunityId=96ba225f-53c5-43a8-b9e0-040a4c4ac62b">Parent Ambassador for Tagalog Language</a></td>
 
         </tr>
-        <tr class="table-row">
-          <td class="table-data"><a  class="jobs__link" href="https://parksjobs.disneycareers.com/job/-/-/1678/41857246400?utm_content=pj_board&utm_source=monster&p_uid=Ah9udP9640&utm_medium=jobad&utm_campaign=dlr_fy22&CID=19714&p_sid=RoCMzPb&ss=paid&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRVfBBHuYli_Qi887vptFfVxg6DGVHagkgDho7QTOkePD_BwE">Linen Control Attendant</a></td>
+        <tr>
+          <td class="bg-light p-2"><a  class="text-decoration-none text-blue" href="https://parksjobs.disneycareers.com/job/-/-/1678/41857246400?utm_content=pj_board&utm_source=monster&p_uid=Ah9udP9640&utm_medium=jobad&utm_campaign=dlr_fy22&CID=19714&p_sid=RoCMzPb&ss=paid&dclid=CjgKEAiAqaWdBhC1hMr3w4yH1CwSJAD_7jSRVfBBHuYli_Qi887vptFfVxg6DGVHagkgDho7QTOkePD_BwE">Linen Control Attendant</a></td>
 
         </tr>
-        <tr class="table-row">
-          <td class="table-data"><a  class="jobs__link" href="https://recruitingbypaycor.com/career/JobIntroduction.action?clientId=8a7883c67fe29bc1017ff61661db0410&id=8a7883ac838c33fa01839f9d447a179e&source=JobTarget%20via%20JobTarget%20Programmatic&code=&fromAggregate=false">Youth Development Professional</a></td>
+        <tr>
+          <td class="bg-primary-brown p-2"><a  class="text-decoration-none text-blue" href="https://recruitingbypaycor.com/career/JobIntroduction.action?clientId=8a7883c67fe29bc1017ff61661db0410&id=8a7883ac838c33fa01839f9d447a179e&source=JobTarget%20via%20JobTarget%20Programmatic&code=&fromAggregate=false">Youth Development Professional</a></td>
 
         </tr>
 
         </table>
       </div>
     </section>
-    <section class="sign-up">
-      <p><a class="sign-up__link" href="sign-up.html">Sign up</a> to our website to get the latest job opportunties</p>
+    <section class="text-center fs-2">
+      <p><a class="text-decoration-none text-blue" href="sign-up.html">Sign up</a> to our website to get list of top hiring companies</p>
     </section>
   </main>
 
 
-  <footer class="footer">
-    <div class="footer__main">
-      <a href="index.html"> <img class="company-logo footer__logo" src="images\logo.png" alt="company logo"> </a>
-      <ul class="footer__list" id="footer__list">
-        <li class="footer__item">
-          <a class="footer__link" href="index.html">Home</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="careeradvice.html">Career advice</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="aboutUs.html">About Us</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="contactUs.html">Contact Us</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="jobs.html">Jobs</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="companies.html">Companies</a>
-        </li>
-      </ul>
-      <div class="footer__socials">
-        <h2 class="footer__scoials-title">Follow us on</h2>
-        <div class="footer__icons">
-          <a aria-label="social media link" class="footer__icon-links" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-          <a aria-label="social media link" class="footer__icon-links" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-          <a aria-label="social media link" class="footer__icon-links" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-          <a aria-label="social media link" class="footer__icon-links" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+  <footer>
+    <div class="mt-5 pt-5 bg-dark-brown text-center text-lg-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-xs-12 pb-5 ms-0">
+            <a class="navbar-brand" href="index.html"><img class="mg-fluid" src="images\logo.png" alt="company logo" width="150vw"> </a>
+
+          </div>
+          <div class="col-lg-3 col-xs-12">
+            <ul class="list-unstyled text-white">
+              <li>
+                <a class="text-decoration-none text-blue fs-3 text-white" href="careeradvice.html">Career advice</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-blue fs-3 text-white" href="aboutUs.html">About Us</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-blue fs-3 text-white" href="contactUs.html">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-blue fs-3 text-white" href="jobs.html">Jobs</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-blue fs-3 text-white" href="companies.html">Companies</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-xs-12 ps-lg-6">
+            <h2 class="mt-lg-0 mt-4 text-white">Follow us on</h2>
+            <div class="footer__icons">
+              <a aria-label="social media link" class="ps-3 text-white" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a aria-label="social media link" class="ps-3 text-white" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              <a aria-label="social media link" class="ps-3 text-white" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+              <a aria-label="social media link" class="ps-3 text-white" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-dark mt-4 py-2 text-center">
+        <div class="copyright">
+          <p class="mb-0"><small class="text-white-50 fs-6">© 2022. Dream Jobs All Rights Reserved.</small></p>
         </div>
       </div>
     </div>
-    <div class="footer__copyright">
-      <p>copyright 2022 <i class="fa-regular fa-copyright"></i> Dream Jobs All rights reserved</p>
-    </div> 
   </footer>
-  <script src="js\script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>

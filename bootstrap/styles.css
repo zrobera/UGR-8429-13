@@ -1,0 +1,57 @@
+/* I will be stating why I used css instead of pure bootstrap though out the file */
+
+/* here I used css to add background image */
+
+.home-search {
+    background-image: url("/images/b2.png");
+    background-size: cover;
+    height: 35rem;
+}
+.companies-search {
+    background-image: url("/images/bg7.jpg");
+    background-size: cover;
+    height: 35rem;
+}
+.job-search {
+    background-image: url("/images/bg6.jpg");
+    background-size: cover;
+    height: 35rem;
+}
+
+/* Used to add hover effect since bootstrap doesn't support this feature */
+
+.nav-link:hover {
+    background-color: #000000;
+}
+
+/* Used to reize an image to a specific size. Bootstrap doesn't support resizing image to a specific size */
+.founder-img {
+    width: 200px;
+}
+.sign-logo {
+    width: 150px
+}
+
+/* needed to add background image */
+.sign-up {
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+  }
+
+/* Used to reize an image to a specific size. Bootstrap doesn't support resizing image to a specific size */
+.testimonial__profile {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* needed to customize the next and previous buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}

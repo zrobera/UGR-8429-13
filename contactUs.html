@@ -5,141 +5,162 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <title>Contact us</title>
+  <link rel="stylesheet" href="bootstrap\bootstrap.css">
+  <link rel="stylesheet" href="bootstrap\styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
-<body>
+<body class="overflow-x-hidden">
   <header class="header">
-    <div class="nav-container">
-      <nav class="nav">
-        <a href="index.html"> <img class="company-logo" src="images\logo.png" alt="company logo"> </a>
-        <input type="checkbox" id="tab-nav" class="tab-nav">
-        <label for="tab-nav" class="checkbox-label">
-          <div class="burger"></div>
-          <div class="burger"></div>
-          <div class="burger"></div>
-        </label>
-        <ul class="nav__list">
-          <li class="nav__items">
-            <a class="nav__links" href="index.html">Home</a>
-          </li>
-          <li class="nav__items">
-            <a class="nav__links" href="jobs.html">Jobs</a>
-          </li>
-          <li class="nav__items">
-            <a class="nav__links" href="companies.html">Companies</a>
-          </li>
-          <li class="nav__items">
-            <a class="nav__links" href="aboutUs.html">About us</a>
-          </li>
-          <li class="nav__items">
-            <a class="nav__links" href="careeradvice.html">Career advice</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
+    <nav class="navbar navbar-expand-lg bg-dark-brown">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-lg-9 ms-md-6 ms-sm-1 me-xl-10 me-lg-5 me-md-1" href="index.html"><img class="company-logo img-fluid" src="images\logo.png" alt="company logo" width="150vw"> </a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav fs-3 ">
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="jobs.html">Jobs</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="companies.html">Companies</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="careeradvice.html">Career advice</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
   </header>
   <main class="contact-main">
-    <div class="contact-main__container">
-      <div class="contact-main__content">
-        <section class="contact-info">
-          <div class="phone contact-info__detail">
-            <i class="fa-solid fa-phone contact-icons"></i>
-            <div class="contact-info__topic">Phone</div>
-            <div class="contact-info__content"><a class="contact-link" href="tel:+251941819399">+251941819399</a></div>
-          </div>
-          <div class="email contact-info__detail">
-            <i class="fa-solid fa-envelope contact-icons"></i>
-            <div class="contact-info__topic">Email</div>
-            <div class="contact-info__content"><a class="contact-link" href="mailto: robeltesfaye428@gmail.com">robeltesfaye428@gmail.com</a></div>
-          </div>
-          <div class="address contact-info__detail">
-            <i class="fa-solid fa-location-dot contact-icons"></i>
-            <div class="contact-info__topic">Address</div>
-            <a class="contact-link" href="https://goo.gl/maps/XBrqPZsgrUKJpEPZ8">
-              <div class="adress-container">
-                <div class="contact-info__content">Ethiopia</div>
-                <div class="contact-info__content">Djibouti st, Addis Ababa</div>
-              </div>
-            </a>
-          </div>
-        </section>
-        <section class="contact-form">
-          <div class="contact-form__topic">Send us a message</div>
-          <p>If you have any comment regarding our service, or if you have any query related to Dream Jobs, feel free to contact us. It is our pleasure to help you.</p>
-          <form id="form">
-            
-            <div class="input-box">
-              <label class="contact-label" for="fullname">Fullname</label>
-              <input class="form-input" type="text" name="name" placeholder="Full name" id="fullname">
-              <small class="error-message">Error message</small>
+    <section class="container-fluid row py-7 px-md-5">
+      <div class="bg-light text-center col-12 col-md-4 pt-10 my-8 order-2 order-md-1 mx-auto">
+        <div class="phone contact-info__detail">
+          <i class="fa-solid fa-phone contact-icons"></i>
+          <div class="contact-info__topic">Phone</div>
+          <div class="contact-info__content"><a class="text-decoration-none" href="tel:+251941819399">+251941819399</a></div>
+        </div>
+        <div class="email contact-info__detail">
+          <i class="fa-solid fa-envelope contact-icons"></i>
+          <div class="contact-info__topic">Email</div>
+          <div class="contact-info__content"><a class="text-decoration-none" href="mailto: robeltesfaye428@gmail.com">robeltesfaye428@gmail.com</a></div>
+        </div>
+        <div class="address contact-info__detail">
+          <i class="fa-solid fa-location-dot contact-icons"></i>
+          <div class="contact-info__topic">Address</div>
+          <a class="text-decoration-none" href="https://goo.gl/maps/XBrqPZsgrUKJpEPZ8">
+            <div class="adress-container">
+              <div class="contact-info__content">Ethiopia</div>
+              <div class="contact-info__content">Djibouti st, Addis Ababa</div>
             </div>
-            
-            <div class="input-box">
-              <label class="contact-label" for="email">Email</label>
-              <input class="form-input" name="email" placeholder="Enter email" id="email">
-              <small class="error-message">Error message</small>
-            </div>
-            
-            <div class="input-box">
-              <label class="contact-label" for="subject">Subject</label>
-              <input class="form-input" type="text" name="subject" placeholder="Subject" id="subject">
-              <small class="error-message">Error message</small>
-            </div>
-            
-            <div class="input-box message-box">
-              <label class="contact-label" for="message">Message</label>
-              <textarea class="text-area" name="message" rows="6" cols="40" placeholder="message" id="message"></textarea>
-              <small class="error-message">Error message</small>
-            </div>
-            <button class="submit-btn" type="submit" onclick="alertFunction()">Submit</button>
-          </form>
-        </section>
+          </a>
+        </div>
       </div>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="footer__main">
-      <a href="index.html"> <img class="company-logo footer__logo" src="images\logo.png" alt="company logo"> </a>
-      <ul class="footer__list" id="footer__list">
-        <li class="footer__item">
-          <a class="footer__link" href="index.html">Home</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="careeradvice.html">Career advice</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="aboutUs.html">About Us</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="contactUs.html">Contact Us</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="jobs.html">Jobs</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="companies.html">Companies</a>
-        </li>
-      </ul>
-      <div class="footer__socials">
-        <h2 class="footer__scoials-title">Follow us on</h2>
-        <div class="footer__icons">
-          <a aria-label="social media link" class="footer__icon-links" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-          <a aria-label="social media link" class="footer__icon-links" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-          <a aria-label="social media link" class="footer__icon-links" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-          <a aria-label="social media link" class="footer__icon-links" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+  
+      <div class="col-11 mx-auto col-md-8 order-1 order-md-2">
+        <h1 class="text-primary mb-4 display-4 fw-bold text-center">Contact Us</h1>
+        <div class="card bg-light">
+          <div class="card-body">
+            <form name="myForm" onsubmit="return(validate())" ;>
+            <div class="row align-items-center pt-4 pb-3">
+              <div class="col-md-3 ps-5">
+                  <label class="mb-0 fw-bold" for="fullName">Full Name:</label>
+              </div>
+              <div class="col-md-9 pe-5">
+                  <input type="text" name="text" placeholder="Full Name" id="fullName" class="form-control form-control-lg" />
+              </div>
+            </div>
+            <div class="row align-items-center pt-4 pb-3">
+              <div class="col-md-3 ps-5">
+                  <label class="mb-0 fw-bold" for="phone">Phone No:</label>
+              </div>
+              <div class="col-md-9 pe-5">
+                  <input type="tel" name="telephone" placeholder="Phone No" id="phone" class="form-control  form-control-lg" />
+              </div>
+            </div>
+            <div class="row align-items-center py-3">
+              <div class="col-md-3 ps-5">
+                  <label class="mb-0 fw-bold" for="email">Email:</label>
+              </div>
+              <div class="col-md-9 pe-5">
+                  <input type="email" name="email" placeholder="example@gmail.com" id="email" class="form-control form-control-lg" />
+              </div>
+            </div>
+            <div class="row align-items-center py-3">
+              <div class="col-md-3 ps-5">
+                  <label class="mb-0 fw-bold" for="message">Message:</label>
+              </div>
+              <div class="col-md-9 pe-5">
+                  <textarea class="form-control" rows="3" name="message" placeholder="Enter your message here___" id="message"></textarea>
+              </div>
+            </div>
+            <div class="px-5 py-3 text-center">
+                <button type="submit" class="btn btn-primary px-5 py-2 send">Contact Now</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>  
+    </section>
+  </main>  
+  <footer>
+    <div class="mt-5 pt-5 bg-dark-brown text-center text-lg-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-xs-12 pb-5 ms-0">
+            <a class="navbar-brand" href="index.html"><img class="mg-fluid" src="images\logo.png" alt="company logo" width="150vw"> </a>
+
+          </div>
+          <div class="col-lg-3 col-xs-12">
+            <ul class="list-unstyled text-white">
+              <li>
+                <a class="text-decoration-none fs-3 text-white" href="careeradvice.html">Career advice</a>
+              </li>
+              <li>
+                <a class="text-decoration-none fs-3 text-white" href="aboutUs.html">About Us</a>
+              </li>
+              <li>
+                <a class="text-decoration-none fs-3 text-white" href="contactUs.html">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-decoration-none fs-3 text-white" href="jobs.html">Jobs</a>
+              </li>
+              <li>
+                <a class="text-decoration-none fs-3 text-white" href="companies.html">Companies</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-xs-12 ps-lg-6">
+            <h2 class="mt-lg-0 mt-4 text-white">Follow us on</h2>
+            <div class="footer__icons">
+              <a aria-label="social media link" class="ps-3 text-white" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a aria-label="social media link" class="ps-3 text-white" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              <a aria-label="social media link" class="ps-3 text-white" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+              <a aria-label="social media link" class="ps-3 text-white" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-dark mt-4 py-2 text-center">
+        <div class="copyright">
+          <p class="mb-0"><small class="text-white-50 fs-6">© 2022. Dream Jobs All Rights Reserved.</small></p>
         </div>
       </div>
     </div>
-    <div class="footer__copyright">
-      <p>copyright 2022 <i class="fa-regular fa-copyright"></i> Dream Jobs All rights reserved</p>
-    </div>
-  </footer> 
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+ 
 
   <script src="js\script.js"></script>
 </body>

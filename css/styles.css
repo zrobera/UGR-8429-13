@@ -513,7 +513,6 @@ body::-webkit-scrollbar{
 
 .vacant-jobs__link, .company-link {
   text-decoration: none;
-  color: #0000FF;
 }
 
 
@@ -994,6 +993,9 @@ body::-webkit-scrollbar{
 .jobs__link:hover {
   text-decoration: underline; 
 }
+.footer__scoials-title {
+  color: white;
+}
 
 
 /* career advice page styling */
@@ -1117,9 +1119,6 @@ body::-webkit-scrollbar{
 
 .footer__socials {
   font-size: 1rem
-}
-.footer__scoials-title {
-  color: white;
 }
 
 

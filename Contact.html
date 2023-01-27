@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="bootstrap\bootstrap.css">
+  <link rel="stylesheet" href="bootstrap\styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="container-fluid text-center row g-0 align-items-center border-bottom border-1 py-3">
+        <div class="col-1"></div>
+        <img class="col-1 gx-1 rounded-circle float-start" src="Image\logo.png" alt="cook's picture for logo">
+        <h1 class="col-9"> <span class="display-3 fw-bolder text-danger"> Hilina </span> Poultry</h1>
+        <div class="col-1"></div>
+    </header>
+    
+    <nav class="container-fluid my-4 py-3 border-bottom border-1 bg-white sticky-top d-none d-md-block">
+        <div class="list-inline text-end text-decoration-none fw-bold">
+            <div class="list-inline-item"><a class="link-info text-body text-decoration-none" href="index.html">HOME</a>
+            </div>
+            <div class="list-inline-item"><a class="link-info text-body text-decoration-none" href="About.html">ABOUT</a>
+            </div>
+            <div class="list-inline-item"><a class="link-info text-body text-decoration-none"
+                    href="Product.html">PRODUCT</a></div>
+            <div class="list-inline-item"><a class="link-info text-body text-decoration-none" href="Menu.html">MENU</a>
+            </div>
+            <div class="list-inline-item"><a class="link-info text-body text-decoration-none" href="Review.html">REVIEW</a>
+            </div>
+            <div class="list-inline-item"><a class="text-decoration-none  link-danger">CONTACT</a></div>
+            <div class="list-inline-item"><a class="link-info text-body text-decoration-none" href="FAQ.html">FAQ</a></div>
+        </div>
+    </nav>
+    
+    <nav class="navbar navbar-dark  sticky-top d-md-none bg-white pb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand  d-md-none">Hilina Poultry</a>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon p-3 bg-secondary"><p d-none>s</p></span>
+            </button>
+            <div class="offcanvas offcanvas-start text-bg-secondary" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hilina Poultry</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 ">
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Product.html">PRODUCT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Menu.html">MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Review.html">REVIEW</a></li>
+                        <li class="nav-item"><a class="nav-link active">CONTACT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid row mb-5">
+    <div class="mapouter col-12 col-md-4 pt-5 my-5 mx-auto"><div class="gmap_canvas"><iframe width="300" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=anbessame&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:300px;}</style><a href="https://www.embedgooglemap.net">custom google map for website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:300px;}</style></div></div>
+
+                    <div class="col-11 mx-auto col-md-8">
+                        <h1 class="text-primary mb-4 display-4 fw-bold text-center">Contact Us</h1>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <form name="myForm" onsubmit="return(validate())" ;>
+                                <div class="row align-items-center pt-4 pb-3">
+                                    <div class="col-md-3 ps-5">
+                                        <label class="mb-0 fw-bold" for="fullName">Full Name:</label>
+                                    </div>
+                                    <div class="col-md-9 pe-5">
+                                        <input type="text" name="text" placeholder="Full Name" id="fullName" class="form-control form-control-lg" />
+                                    </div>
+                                </div>
+                                <div class="row align-items-center pt-4 pb-3">
+                                    <div class="col-md-3 ps-5">
+                                        <label class="mb-0 fw-bold" for="phone">Phone No:</label>
+                                    </div>
+                                    <div class="col-md-9 pe-5">
+                                        <input type="tel" name="telephone" placeholder="Phone No" id="phone" class="form-control  form-control-lg" />
+                                    </div>
+                                </div>
+                                <div class="row align-items-center py-3">
+                                    <div class="col-md-3 ps-5">
+                                        <label class="mb-0 fw-bold" for="email">Email:</label>
+                                    </div>
+                                    <div class="col-md-9 pe-5">
+                                        <input type="email" name="email" placeholder="example@gmail.com" id="email" class="form-control form-control-lg" />
+                                    </div>
+                                </div>
+                                <div class="row align-items-center py-3">
+                                    <div class="col-md-3 ps-5">
+                                        <label class="mb-0 fw-bold" for="message">Message:</label>
+                                    </div>
+                                    <div class="col-md-9 pe-5">
+                                        <textarea class="form-control" rows="3" name="message" placeholder="Enter your message here___" id="message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-3 text-center">
+                                    <button id="co-bt" type="submit" class="btn btn-primary px-5 py-2 send">Contact Now</button>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+
+    <div class="container-fluid row justify-content-center my-3">
+       <div class="col-3 col-sm-2 col-md-2 col-lg-1 ps-5"><a href="https://www.facebook.com/hb.ea.7" target="_blank" id="fb"><img
+            class="card-img-top" src="Image\Facebook.png" alt="facebook icon"></a></div>
+        <div class="col-3 col-sm-2 col-md-2 col-lg-1 ps-5"><a href="https://t.me/O425Azril" target="_blank" id="tg"><img class="card-img-top"
+                src="Image\Telegram.png" alt="telegram icon"></a></div>
+        <div class="col-3 col-sm-2 col-md-2 col-lg-1 ps-5"><a href="mailto:bemnetaduganaw@gmail.com" target="_blank" id="em"><img
+                class="card-img-top" src="Image\Email.png" alt="email(envelope) icon"></a></div>
+    </div>
+
+    <p class="text-center text-secondary">You can contact us at any where and any time. <span class="text-success">Call Now +251 962790159</span></p>
+    <hr>
+    <footer class="container-fluid bg-light text-center py-4">
+        <p><span class="h4 text-danger">&copy;</span> 2022 Copyright <span class="h4 text-danger">HilinaPoultry.com</span> All Rights Reserved. All other trademarks and copyrights are the property of their respective holders. </p>
+    </footer>
+
+    <script src="js\script.js"></script>
+</body>
+</html>
